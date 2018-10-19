@@ -272,7 +272,7 @@ def execute_drop(item_id):
     """
 
     for item in inventory:
-        if item["id"]==item.id:
+        if item["id"]==item_id:
             inventory.remove(item)
             current_room["items"].append(item)
             return
